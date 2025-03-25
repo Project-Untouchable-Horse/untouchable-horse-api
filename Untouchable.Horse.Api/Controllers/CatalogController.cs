@@ -1,13 +1,30 @@
 using Microsoft.AspNetCore.Mvc;
 using Untouchable.Horse.Domain.Catalog;
+using Untouchable.Horse.Data;
 
 namespace Untouchable.Horse.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/catalog")]
+   /* [Route("[controller]")]*/
+    
     public class CatalogController : ControllerBase
     {
+        private readonly StoreContext _db;
+
+        public CatalogController(StoreContext db)
+        {
+            _db = db;
+
+        }
         [HttpGet]
+        public IActionResult GetItems()
+        {
+            return Ok(_db.Items);
+        }
+
+
+        /*[HttpGet]
         public IActionResult GetItems()
         {
             var items = new List<Item>()
@@ -18,6 +35,9 @@ namespace Untouchable.Horse.Api.Controllers
 
             return Ok(items);
         }
+        */
+
+
         [HttpGet("{id:int}")]
         public IActionResult GetItem(int id)
         {
