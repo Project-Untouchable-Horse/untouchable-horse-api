@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Untouchable.Horse.Domain\Untouchable.Horse.Domain.csproj" />
+    <ProjectReference Include="..\Untouchable.Horse.Data\Untouchable.Horse.Data.csproj" />
   </ItemGroup>
 
 </Project>
