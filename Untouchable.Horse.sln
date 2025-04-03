@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Untouchable.Horse.Domain", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Untouchable.Horse.Api", "Untouchable.Horse.Api\Untouchable.Horse.Api.csproj", "{012E5237-40E0-4B39-BEFB-44BBCC77E655}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{833A3741-E3F9-4865-8860-AC1BC76A723C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Untouchable-Horse.Domain.Tests", "tests\Untouchable-Horse.Domain.Tests\Untouchable-Horse.Domain.Tests.csproj", "{90E5B590-B8B2-45C3-A7A1-CB137D9F9B67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,12 @@ Global
 		{012E5237-40E0-4B39-BEFB-44BBCC77E655}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{012E5237-40E0-4B39-BEFB-44BBCC77E655}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{012E5237-40E0-4B39-BEFB-44BBCC77E655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90E5B590-B8B2-45C3-A7A1-CB137D9F9B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90E5B590-B8B2-45C3-A7A1-CB137D9F9B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90E5B590-B8B2-45C3-A7A1-CB137D9F9B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90E5B590-B8B2-45C3-A7A1-CB137D9F9B67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90E5B590-B8B2-45C3-A7A1-CB137D9F9B67} = {833A3741-E3F9-4865-8860-AC1BC76A723C}
 	EndGlobalSection
 EndGlobal
