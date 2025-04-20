@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Untouchable.Horse.Domain.Catalog;
 
@@ -58,6 +59,7 @@ namespace Untouchable.Horse.Api.Controllers
         }
 
          [HttpDelete("{id:int}")]
+         [Authorize("delete:catalog")]
         public IActionResult Delete(int id)
         {
             return NoContent();
