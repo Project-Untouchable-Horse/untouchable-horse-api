@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Untouchable.Horse.Domain", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Untouchable.Horse.Api", "Untouchable.Horse.Api\Untouchable.Horse.Api.csproj", "{012E5237-40E0-4B39-BEFB-44BBCC77E655}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Untouchable.Horse.Data", "Untouchable.Horse.Data\Untouchable.Horse.Data.csproj", "{A41FB8D3-554B-4230-B839-3FB6627D1835}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{012E5237-40E0-4B39-BEFB-44BBCC77E655}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{012E5237-40E0-4B39-BEFB-44BBCC77E655}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{012E5237-40E0-4B39-BEFB-44BBCC77E655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A41FB8D3-554B-4230-B839-3FB6627D1835}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A41FB8D3-554B-4230-B839-3FB6627D1835}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A41FB8D3-554B-4230-B839-3FB6627D1835}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A41FB8D3-554B-4230-B839-3FB6627D1835}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
