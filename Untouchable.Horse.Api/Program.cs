@@ -12,7 +12,6 @@ builder.Services.AddDbContext<StoreContext>(options =>
     b => b.MigrationsAssembly("Untouchable.Horse.Api"))
 );
 
-
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
