@@ -1,6 +1,15 @@
 @Untouchable.Horse.Api_HostAddress = http://localhost:5291
 
-GET {{Untouchable.Horse.Api_HostAddress}}/weatherforecast/
-Accept: application/json
 
 ###
+
+
+###
+curl --request POST \
+  --url https://dev-rdog00gep0aoo8lg.us.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  --data '{"client_id":"mAMPafbzzXOkGpJT74TuTI7EgHIayu4P","client_secret":"FWwRJk-NGBLK2-n8QpofBSKnspX95dDynkSOS-CD8mFzh1jt7xtdAXeKcUuJq2hz","audience":"https://untouchable-horse","grant_type":"client_credentials"}'
+
+curl --request DELETE  \
+  --url http://localhost:5263/catalog/3 \
+  --header 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkIwWXlSVzBfbWh1bTNUeldFTEhrcSJ9.eyJpc3MiOiJodHRwczovL2Rldi1yZG9nMDBnZXAwYW9vOGxnLnVzLmF1dGgwLmNvbS8iLCJzdWIiOiJtQU1QYWZienpYT2tHcEpUNzRUdVRJN0VnSElheXU0UEBjbGllbnRzIiwiYXVkIjoiaHR0cHM6Ly91bnRvdWNoYWJsZS1ob3JzZSIsImlhdCI6MTc0NTE4NDM3OSwiZXhwIjoxNzQ1MjcwNzc5LCJzY29wZSI6ImRlbGV0ZTpjYXRhbG9nIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIiwiYXpwIjoibUFNUGFmYnp6WE9rR3BKVDc0VHVUSTdFZ0hJYXl1NFAifQ.D-JCrTRHfJYArJyUNG2FnyNWqMVgcAuNhcwktFDJK7nFh7h_DN47w_7-cF5ZuRTgZX9av3la6Wt_vqPtKkE4v8j1oxwYToFBeh0qvmJKarAzpVqtB3BvZJqEriyA27I6luE_DRxm7_Ov6jEI4Va4FVse-4kGEsemUQwir1t29vBu22zNiKTsDU8T7HggSNMOnbCvljuI1b2cJPRvlmpc774QXoCvAUpo8ih0U_M9acHJZgCJDynrmgJIK1DWff7LbvjL7d-WYeSQmhutCoO0duuMNGtE1huYhj7CUtmIucO3wyxcOJ9mIFuxWNWmbxrlK8Ni2raTjqG9TE4tVFkEpg
